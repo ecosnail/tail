@@ -1,2 +1,7 @@
-ecosnail_test (vector_test.cpp)
-ecosnail_test (range_test.cpp)
+link_libraries (tail)
+
+add_executable (range_test range_test.cpp)
+add_test (NAME range_test COMMAND range_test)
+
+add_executable (vector_test vector_test.cpp)
+add_test (NAME vector_test COMMAND vector_test)
