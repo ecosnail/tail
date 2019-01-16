@@ -1,8 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch.hpp>
 
-#include <ecosnail/tail/key_range.hpp>
-#include <ecosnail/tail/value_range.hpp>
+#include <ecosnail/tail.hpp>
 
 #include <map>
 
