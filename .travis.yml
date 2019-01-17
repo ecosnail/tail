@@ -5,15 +5,14 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - g++-7
+      - gcc-8
+      - g++-8
 
 language: cpp
-compiler:
-  - gcc
 
 script:
   - mkdir build
   - cd build
-  - cmake ..
+  - CC=gcc-8 CXX=g++-8 cmake ..
   - make
   - make test
